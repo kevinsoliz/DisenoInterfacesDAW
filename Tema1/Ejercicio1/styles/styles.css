@@ -6,6 +6,10 @@
     --color-headings: #6B82A6;
     --color-body: #B7B9BC;
 }
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+/* General */
 
 html {
     font-size: 62.5%;
@@ -16,8 +20,17 @@ body {
     color: var(--color-body);
     font-family: 'Crimson Pro'; 
     font-size: 3rem;
+    margin: 20px;
    
 }
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Typography */
 
 h1, h2, h3 {
     color: var(--color-headings);
@@ -27,21 +40,6 @@ h1, h2, h3 {
 h2 {
     font-size: 4rem;
 }
-/* generic classes */
-
-/* main content */
-
-.logo {
-    font-family: Damion;
-    font-size: 4rem;
-}
-
-.hero {
-    background-color: var(--color-accent);
-}
-/* footer */
-
-/* STILOS PARA DESKTOP */
 
 @media screen and (min-width: 1024px){
     body {
@@ -52,3 +50,53 @@ h2 {
         font-size: 3rem;
     }
 }
+
+/* Listas */
+
+.list {
+    list-style: none;
+    padding: 0;  
+}
+
+.list--primary {
+    color: var(--color-primario);
+}
+
+/* Nav Bar */
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .list--item {
+        margin: 0 2rem;
+        white-space: nowrap;
+    }
+}
+
+
+/* Logo*/
+
+.logo {
+    font-family: Damion;
+    font-size: 4rem;
+    margin: 0;
+}
+
+/* Hero */
+.hero {
+    background-color: var(--color-accent);
+    width: 100vw;
+}
+
+
+
