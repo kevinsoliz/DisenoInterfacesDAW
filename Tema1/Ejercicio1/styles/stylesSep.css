@@ -167,6 +167,10 @@ a {
   padding: var(--padding-vertical) 2rem;
 }
 
+.block--accent {
+  background: var(--color-accent);
+}
+
 /* Clase generica container */
 .container {
   max-width: 1140px;
