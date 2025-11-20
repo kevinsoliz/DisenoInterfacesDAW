@@ -1,11 +1,11 @@
 /* BASE */
 :root {
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
-  --color-headings: #1b0760;
-  --color-body: #918ca4;
-  --color-body-darker: #5c5577;
+  --color-primary: #44556D;
+  --color-secondary: #fff;
+  --color-accent: #BBFFA7; 
+  --color-headings: #6B82A6;
+  --color-body: #B7B9BC;
+  --color-body-darker: #717172;
   --color-border: #ccc;
   --border-radius: 30px;
 }
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: 'Crimson Pro'; 
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
@@ -34,6 +34,7 @@ h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
   line-height: 1.1;
+  font-family: 'Abril Fatface';
 }
 
 h1 {
@@ -85,13 +86,19 @@ p {
     background: rgb(195, 236, 98);
 }
 
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
 /* Buttons */
 
 .btn {
   border-radius: 40px;
   border: 0;
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   margin: 1rem 0;
   padding: 2rem 3rem;
@@ -99,6 +106,9 @@ p {
   text-transform: uppercase;
   white-space: nowrap;
   outline: 0;
+  font-family: inherit;
+  letter-spacing: 2px;
+
 }
 
 
@@ -109,42 +119,33 @@ p {
 }
 
 .btn--primary:hover {
-  background: #3a8ffb;
+  background: #32445a;
 }
 
-.btn--secondary {
-  background: var(--color-secondary);
-  color: #fff;
-}
-
-.btn--secondary:hover {
-  background: #00c8eb;
-}
 
 .btn--accent {
   background: var(--color-accent);
   color: #fff;
+  color: #448a86; 
 }
 
 .btn--accent:hover {
-  background: #ec3000;
+  background: #6ddbb1; 
+  
 }
 
 .btn--outline {
   background: #fff;
-  border: 2px solid var(--color-headings);
+  border: 3px solid var(--color-primary);
   color: var(--color-headings);
 }
 
 .btn--outline:hover {
-  background: var(--color-headings);
+  background: var(--color-primary);
   color: #fff;
 }
 
-.btn--stretched {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
+
 
 /* Skin by size */
 .btn--block {
