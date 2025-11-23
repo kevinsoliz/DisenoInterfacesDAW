@@ -14,6 +14,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 /* Typography */
 
@@ -167,14 +169,18 @@ a {
   padding: var(--padding-vertical) 2rem;
 }
 
+.block__header {
+  text-align: center;
+}
+
 .block--accent {
   background: var(--color-accent);
 }
 
-/* Clase generica container */
+/* Clase generica para ancho máximo de todo el contenido */
 .container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 0 auto; /* 0px vertical, horizontal automático
 }
 
 /* Grids */
