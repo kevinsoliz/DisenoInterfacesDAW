@@ -72,7 +72,14 @@ p {
   }
 }
 
+/* Logo*/
 
+.logo {
+    font-family: Damion;
+    font-size: 4rem;
+    margin: 0;
+    color: var(--color-primary);
+}
 
 /* Cards */
 .card {
@@ -215,3 +222,96 @@ a {
   max-width: 400px;
   margin: 0 auto;
 }
+
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Icons */
+ .icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Skins */
+.icon--white {
+  fill: #fff;
+}
+
+/* Collapsibles */
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Navigation */
+.nav {
+  background: var(--color-accent);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0rem 0rem;
+
+}
+
+.nav__item > a {
+  color: var(--color-primary);
+  transition: color 0.3s;
+  padding: 0.5rem 1rem;
+}
+.nav__item > a:hover {
+  color: var(--color-headings)
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.nav__toggler:hover {
+  opacity: 1;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+}
+
+
