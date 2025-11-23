@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles/stylesSep.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav collapsible">
+      <a href="#">
+        <h1 class="logo">Bibliofiles</h1>
+      </a>
+      <img class="icon nav__toggler" src="images/menu.svg" alt="" />
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="sobre-mi.html">Sobre mí</a></li>
+        <li class="nav__item"><a href="contacto.html">Contacto</a></li>
+        <li class="nav__item">
+          <a href="pruebas.html">Home</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="block container">
+      <!--Formulario de-->
+      <h2>Contáctame</h2>
+      <form action="">
+        <label for="nombreApellido">Nombre y apellido</label>
+        <input
+          type="text"
+          id="nombreApellido"
+          name="nombreApellido"
+          placeholder="Charles Dickens"
+          required
+        />
+        <label for="edad">Edad</label>
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          max="3"
+          placeholder="100 años de soledad"
+          required
+        />
+        <label for="correo">Email</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="porsiquieresqueterecomiendealgo@gmail.com"
+        />
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" cols="20" rows="10">
+Pues tu blog no me gusta porque dices que Shakespeare es el padre del teatro, pero olvidas a Calderón que ya estaba escribiendo obras maestras mientras los ingleses aún estaban decidiendo si poner o no telón.</textarea
+        >
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </body>
+  <script src="script/main.js"></script>
+</html>

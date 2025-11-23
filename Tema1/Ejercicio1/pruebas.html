@@ -20,7 +20,79 @@
     />
   </head>
   <body>
-    
+    <nav class="nav collapsible">
+      <a href="#">
+        <h1 class="logo">Bibliofiles</h1>
+      </a>
+      <img class="icon nav__toggler" src="images/menu.svg" alt="" />
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="sobre-mi.html">Sobre mí</a></li>
+        <li class="nav__item"><a href="contacto.html">Contacto</a></li>
+        <li class="nav__item">
+          <a href="pruebas.html">Home</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="block block--accent">
+      <div class="container">
+        <img class="hero__image" src="images/friends.png" alt="" />
+      </div>
+    </section>
+
+    <section class="block container block-genres">
+      <div class="grid grid--1x2 grid--1x3">
+        <div class="genre">
+          <div class="card">
+            <div class="card__body card--accent">
+              <img class="genre__image" src="images/scify.png" alt="" />
+            </div>
+            <button class="btn btn--outline btn--block">Scify</button>
+          </div>
+        </div>
+
+        <div class="genre">
+          <div class="card">
+            <div class="card__body">
+              <img class="genre__image" src="images/teatro.png" alt="" />
+            </div>
+            <button class="btn btn--outline btn--block">Teatro</button>
+          </div>
+        </div>
+        <div class="genre">
+          <div class="card">
+            <div class="card__body">
+              <img class="genre__image" src="images/fantasy.png" alt="" />
+            </div>
+            <a href="#" class="btn btn--accent btn--block">Fantasía</a>
+          </div>
+        </div>
+        <div class="genre">
+          <div class="card">
+            <div class="card__body">
+              <img class="genre__image" src="images/filosofia.png" alt="" />
+            </div>
+            <button class="btn btn--outline btn--block">Filosofía</button>
+          </div>
+        </div>
+        <div class="genre">
+          <div class="card">
+            <div class="card__body">
+              <img class="genre__image" src="images/historia.png" alt="" />
+            </div>
+            <button class="btn btn--outline btn--block">Historia</button>
+          </div>
+        </div>
+        <div class="genre">
+          <div class="card">
+            <div class="card__body">
+              <img class="genre__image" src="images/novela.png" alt="" />
+            </div>
+            <button class="btn btn--outline btn--block">Novela</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="script/main.js"></script>
 </html>

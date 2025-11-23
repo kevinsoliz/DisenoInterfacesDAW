@@ -92,7 +92,7 @@ p {
 }
 
 .card--accent {
-    background: rgb(195, 236, 98);
+    background: var(--color-accent);
 }
 
 /* Links */
@@ -214,6 +214,9 @@ a {
 }
 
 /* Genres Block */
+.block-genres {
+  margin-top: 10rem;
+}
 .block-genres .grid {
   gap: 8rem 4rem;
 }
@@ -307,7 +310,7 @@ a {
   .nav__list {
     width: auto;
     display: flex;
-    font-size: 1.6rem;
+    font-size: 2rem;
     max-height: 100%;
     opacity: 1;
   }
@@ -315,3 +318,13 @@ a {
 }
 
 
+/* Hero */
+
+.hero__image {
+  max-width: 920px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: -15rem;
+}
