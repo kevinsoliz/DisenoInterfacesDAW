@@ -180,7 +180,7 @@ a {
 /* Clase generica para ancho máximo de todo el contenido */
 .container {
   max-width: 1140px;
-  margin: 0 auto; /* 0px vertical, horizontal automático
+  margin: 0 auto; /* 0px vertical, horizontal automático */
 }
 
 /* Grids */
