@@ -1,0 +1,14 @@
+body {
+    background: dodgerblue;
+    color: gold;
+}
+p {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    display: block;
+}
+
+img {
+    width: 500px;
+}

@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+a, button{
+    text-decoration: 0;
+    background: dodgerblue;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 0;
+}
+
+a:hover, button:hover {
+    background: rgb(12, 117, 223);
+    cursor: pointer;
+}
+
+form {
+    max-width: 200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.grid--1x3 {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgb(243, 71, 119);
+    padding: 30px 10px;
+    gap: 10px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+img {
+    width: 100%;
+    background: rgb(60, 14, 38);
+    border-radius: 20px;
+    transition: background, transform 0.6s;
+    z-index: 0;
+}
+
+h2 {
+    color: white;
+    background:  rgb(60, 14, 38);
+    padding: 5px 20px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+img:hover {
+    background: rgb(185, 233, 26);
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 10;
+
+}
+
+.image:hover h2 {
+    opacity: 1;
+}
+
+
