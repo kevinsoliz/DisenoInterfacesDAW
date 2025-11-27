@@ -38,6 +38,7 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1.1;
   font-family: "Abril Fatface";
+  letter-spacing: 3px;
 }
 
 h1 {
@@ -368,4 +369,23 @@ a {
 
 .block-form__header {
   text-align: center;
+}
+
+/* Tablas */
+.block-table {
+  width: 100%;
+  margin-top: 5rem;
+  border-collapse: collapse;
+}
+.block-table td {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+.block-table td img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
