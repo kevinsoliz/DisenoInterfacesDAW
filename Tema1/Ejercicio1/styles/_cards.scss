@@ -1,0 +1,13 @@
+/* Cards */
+.card {
+  overflow: hidden;
+}
+
+.card__body {
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.card--accent {
+    background: var(--color-accent);
+}

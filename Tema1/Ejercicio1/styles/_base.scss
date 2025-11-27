@@ -1,0 +1,8 @@
+/* Box sizing con selector universal para que afecte a todos los elementos */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,67 @@
+/* Buttons */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  outline: 0;
+  font-family: inherit;
+  letter-spacing: 2px;
+
+}
+
+
+/* Skins */
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #32445a;
+}
+
+
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+  color: #448a86; 
+}
+
+.btn--accent:hover {
+  background: #6ddbb1; 
+  
+}
+
+.btn--outline {
+  background: #fff;
+  border: 3px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn--outline:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+
+
+/* Skin by size */
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+/* Desktop version */
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
