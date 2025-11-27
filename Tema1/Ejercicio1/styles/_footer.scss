@@ -2,6 +2,14 @@
 .footer__section {
     padding: 2rem;
     text-align: center;
+
+    a {
+        color: var(--color-primary);
+    }
+
+    a:hover {
+        color: var(--color-headings);
+    }
 }
 
 .footer__brand {

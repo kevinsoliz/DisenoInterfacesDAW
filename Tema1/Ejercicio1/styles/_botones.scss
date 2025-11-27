@@ -41,7 +41,7 @@
 }
 
 .btn--outline {
-  background: #fff;
+  background: transparent;
   border: 3px solid var(--color-primary);
   color: var(--color-primary);
 }
@@ -54,11 +54,16 @@
 
 
 /* Skin by size */
-.btn--block {
-  width: 100%;
-  display: inline-block;
+.btn--small{
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
 }
 
+.btn--block {
+  width: 100%;
+  display: block;
+}
 /* Desktop version */
 @media screen and (min-width: 1024px) {
   .btn {
