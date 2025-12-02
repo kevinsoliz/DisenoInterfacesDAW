@@ -30,16 +30,17 @@
 
 
 .btn--accent {
-   background: #6ddbb1;
-    color: #448a86;
+   background: #6de2b5;
+    color: white;
     transition: 0.3s ease-in-out;  
     display: inline-block;
 }
 
 .btn--accent:hover {
   transform: scale(1.2);
-  background: #27a893;
-  color: #8afdcd;
+  background: #59eeb5;
+  color: white;
+  box-shadow: 0 0 15px 3px rgba(#11807a, 0.4);
   
 }
 
