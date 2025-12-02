@@ -34,7 +34,7 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--color-headings);
+  color: var(--color-primary);
   margin-bottom: 1rem;
   line-height: 1.1;
   font-family: "Abril Fatface";
@@ -126,13 +126,16 @@ a {
 }
 
 .btn--accent {
-  background: var(--color-accent);
-  color: #fff;
+  background: #6ddbb1;
   color: #448a86;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
 }
 
 .btn--accent:hover {
-  background: #6ddbb1;
+  transform: scale(1.2);
+  background: #27a893;
+  color: #8afdcd;
 }
 
 .btn--outline {
@@ -144,6 +147,11 @@ a {
 .btn--outline:hover {
   background: var(--color-primary);
   color: #fff;
+}
+
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 /* Skin by size */
@@ -176,6 +184,10 @@ a {
 
 .block--accent {
   background: var(--color-accent);
+}
+
+.block__heading {
+  margin-top: 0;
 }
 
 /* Clase generica para ancho máximo de todo el contenido */
@@ -307,12 +319,16 @@ a {
 }
 /* Hero */
 .hero__image {
-  max-width: 920px;
   width: 100%;
-  display: block;
-  margin: 0 auto;
   margin-top: 10rem;
   margin-bottom: -15rem;
+}
+
+.hero__tagline {
+  font-size: 2.5rem;
+  color: var(--color-headings);
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
 }
 
 /* Footer */

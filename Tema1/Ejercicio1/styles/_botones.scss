@@ -30,13 +30,16 @@
 
 
 .btn--accent {
-  background: var(--color-accent);
-  color: #fff;
-  color: #448a86; 
+   background: #6ddbb1;
+    color: #448a86;
+    transition: 0.3s ease-in-out;  
+    display: inline-block;
 }
 
 .btn--accent:hover {
-  background: #6ddbb1; 
+  transform: scale(1.2);
+  background: #27a893;
+  color: #8afdcd;
   
 }
 
@@ -51,6 +54,10 @@
   color: #fff;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 
 
 /* Skin by size */
