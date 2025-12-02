@@ -275,6 +275,7 @@ a {
 .nav__list {
   width: 100%;
   margin: 0;
+  padding: 0.5rem 0;
 }
 
 .nav__item > a {
@@ -302,23 +303,15 @@ a {
 }
 
 /* Skins */
-.nav__item--filled {
+.nav__item--filled > a {
   border: 2px solid var(--color-primary);
   border-radius: 30px;
-  max-width: 200px;
-}
-
-.nav__item--filled:hover {
-  background: var(--color-primary);
-}
-
-.nav__item--filled > a {
-  position: relative;
-  top: -2px;
   padding: 0.5rem 3rem;
+  padding-bottom: 0.7rem;
 }
 
 .nav__item--filled > a:hover {
+  background: var(--color-primary);
   color: white;
 }
 
