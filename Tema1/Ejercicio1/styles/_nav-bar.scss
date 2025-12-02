@@ -13,15 +13,11 @@
   margin: 0;
 }
 
-.nav__item {
-  padding: 0rem 0rem;
-
-}
 
 .nav__item > a {
   color: var(--color-primary);
   transition: color 0.3s;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
 }
 .nav__item > a:hover {
   color: var(--color-headings)
@@ -39,6 +35,26 @@
 
 .nav.collapsible--expanded .nav__toggler {
   opacity: 1;
+}
+
+/* Skins */
+.nav__item--filled {
+  border: 2px solid var(--color-primary);
+  border-radius: 30px;
+}
+
+.nav__item--filled:hover {
+  background: var(--color-primary);
+}
+
+.nav__item--filled > a {
+  position: relative;
+  top: -2px;
+  padding: 0.5rem 3rem;
+}
+
+.nav__item--filled > a:hover {
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
