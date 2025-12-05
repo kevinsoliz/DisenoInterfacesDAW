@@ -1,3 +1,6 @@
+.block-buscador {
+    margin-top: 15rem;
+}
 .input {
   padding: 1.5rem 3.5rem;
   border: 1px solid var(--color-border);
@@ -8,9 +11,11 @@
 }
 
 .input-group {
+    border: 5px solid var(--color-accent);
     border-radius: 50px;
     display: flex;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 .input-group .input {
@@ -29,11 +34,21 @@
 .btn .icon {
     position: relative;
     top: 5px;
-    height: 20px;
+    height: 18px;
 }
 
-@media screen and (min-width: 1024px) {
-  .input {
-    font-size: 1.5rem;
-  }
+::placeholder {
+    color: rgb(200, 200, 200);
+}
+
+@media screen and (min-width: 768px) {
+    .block-buscador {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .input-group .btn {
+        font-size: 2rem;
+    }
 }
