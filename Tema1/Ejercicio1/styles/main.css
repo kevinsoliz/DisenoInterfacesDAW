@@ -106,7 +106,7 @@ a {
   font-size: 2rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -455,4 +455,43 @@ table, tr, th, td {
 table tr:hover, tr tr:hover, th tr:hover, td tr:hover {
   background: var(--color-accent);
   color: var(--color-primary);
+}
+
+.input {
+  padding: 1.5rem 3.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  outline: 0;
+  color: var(--color-headings);
+  font-size: 2rem;
+}
+
+.input-group {
+  border-radius: 50px;
+  display: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  width: 0;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
+
+.input-group .btn {
+  margin: 4px;
+}
+
+.btn .icon {
+  position: relative;
+  top: 5px;
+  height: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
