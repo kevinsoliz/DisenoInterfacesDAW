@@ -7,14 +7,19 @@
 
    input, textarea {
     margin-bottom: 1rem;
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     border: 0;
     border-radius: 30px;
     resize: none;
+    outline: 0;
    }
 
+   ::placeholder {
+    color: #cdcbd7;
+    }
+
    textarea {
-    color: var(--color-body-darker);
+    color: #cdcbd7;
     padding: 20px;
     margin-bottom: 3rem;
    }
