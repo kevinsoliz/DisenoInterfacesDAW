@@ -185,6 +185,10 @@ a {
 
 .block--accent {
   background: var(--color-accent);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .block__heading {
@@ -331,8 +335,8 @@ a {
 /* Hero */
 .hero__image {
   width: 100%;
-  margin-top: 10rem;
-  margin-bottom: -15rem;
+  margin-top: 5rem;
+  margin-bottom: -10rem;
 }
 
 .hero__tagline {
@@ -349,7 +353,7 @@ a {
 @media screen and (min-width: 768px) {
   .hero__image {
     margin-bottom: 0;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .hero__content {
     text-align: left;
@@ -365,6 +369,10 @@ a {
   }
 }
 /* Footer */
+.block-footer {
+  background: var(--color-accent);
+}
+
 .footer__section {
   padding: 2rem;
   text-align: center;

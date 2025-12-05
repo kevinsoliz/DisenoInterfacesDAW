@@ -10,6 +10,10 @@
 
 .block--accent {
   background: var(--color-accent);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .block__heading {
