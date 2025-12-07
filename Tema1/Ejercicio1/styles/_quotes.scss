@@ -1,0 +1,14 @@
+blockquote {
+  
+    margin-bottom: 2rem;
+    padding: 2rem 3rem;
+    color: var(--color-headings);
+    font-style: italic;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+cite {
+    font-weight: bold;
+    display: block;
+    text-align: right;
+}

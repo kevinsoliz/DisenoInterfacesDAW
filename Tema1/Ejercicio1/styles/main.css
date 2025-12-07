@@ -586,4 +586,18 @@ table tr:hover, tr tr:hover, th tr:hover, td tr:hover {
   aspect-ratio: 16/9;
   width: 100%;
   height: auto;
+}
+
+blockquote {
+  margin-bottom: 2rem;
+  padding: 2rem 3rem;
+  color: var(--color-headings);
+  font-style: italic;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+cite {
+  font-weight: bold;
+  display: block;
+  text-align: right;
 }/*# sourceMappingURL=main.css.map */
