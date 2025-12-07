@@ -232,6 +232,8 @@ a {
 }
 .block-genres .block__header {
   margin-bottom: 3rem;
+  background: white;
+  border-radius: 20px;
 }
 .block-genres p {
   color: var(--color-headings);
