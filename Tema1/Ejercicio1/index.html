@@ -1,331 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="BibliBlog sobre mis clásicos favoritos">
-    <meta author="Kevin Soliz">
-    <meta keywords="biblioteca libros clásicos literatura blog kevin soliz">
-    <title>Bibliofiles</title>
-    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav collapsible">
+      <a href="home.html">
+        <h1 class="logo">Bibliofiles</h1>
+      </a>
+      <img class="icon nav__toggler" src="images/menu.svg" alt="" />
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="sobre-mi.html">Sobre mí</a></li>
+        <li class="nav__item"><a href="contacto.html">Contacto</a></li>
+        <li class="nav__item nav__item--filled">
+          <a href="home.html">Home</a>
+        </li>
+      </ul>
+    </nav>
 
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="container list list--nav"> <!--Lista desordenada-->
-                <h1 class="logo">Bibliofiles</h1> <!--Logo-->
-                <a href="#novelas" class="list--primary list--item">
-                    <li>Novelas</li>
-                </a>
-                <a href="#historia" class="list--primary list--item">
-                    <li>Historia</li>
-                </a>
-                <a href="#fantasia" class="list--primary list--item">
-                    <li>Fantasía</li>
-                </a>
-                <a href="#cienciaFiccion" class="list--primary list--item">
-                    <li>Ciencia Ficción</li>
-                </a>
-                <a href="#filosofia" class="list--primary list--item">
-                    <li>Filosofía</li>
-                </a>
-                <a href="#teatro" class="list--primary list--item">
-                    <li>Teatro</li>
-                </a>
-                <a href="#sobreMi" class="list--primary list--item">
-                    <li>Sobre mí</li>
-                </a>
-                <a href="#contactame" class="list--primary list--item">
-                    <li>Contáctame</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        
-            <section class="hero"><img src="images/girl.svg"></section>
-        
-        <section>
-            <h2>Sinopsis</h2>
-            <article>
-                Bibliofiles es un blog dedicado a los amantes de la lectura. 
-                Aquí comparto mis libros favoritos, reseñas personales y 
-                reflexiones sobre las historias que más me han marcado. 
-                Desde clásicos inolvidables hasta lecturas contemporáneas, 
-                cada publicación busca transmitir la emoción de descubrir 
-                nuevos mundos a través de las palabras. Si disfrutas perderte 
-                entre páginas y personajes, este es tu lugar.
-            </article>
+    <section class="block block--accent hero">
+      <div class="grid grid--1x2 container">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Palabras que Transforman</h1>
+          <p class="hero__tagline">
+            En la lectura me convierto en mil hombres y sigo siendo yo mismo…
+            veo con los ojos de otros.
+          </p>
+          <a href="contacto.html" class="btn btn--accent btn--stretched"
+            >News letter</a
+          >
+        </header>
+        <img class="hero__image" src="images/friends.png" alt="" />
+      </div>
+    </section>
+
+    <section class="block container block-buscador">
+      <header class="block__header">
+        <h2>Encuentra tu libro</h2>
+        <p>
+          Descubre historias fascinantes y encuentra el libro perfecto para tu
+          próxima aventura.
+        </p>
+      </header>
+      <div class="input-group">
+        <input type="text" class="input" placeholder="20.000 Leguas de Viaje Submarino" />
+        <button class="btn btn--primary">
+          <img class="icon" src="images/lupa.svg" alt="" />
+          Buscar
+        </button>
+      </div>
+    </section>
+
+    <section class="block container block-genres">
+      <div class="grid grid--1x2 grid--1x3">
+        <div class="genre">
+          <div class="card">
+            <div class="card__body card--accent">
+              <img class="genre__image" src="images/scify.png" alt="" />
+            </div>
+            <a class="btn btn--outline btn--block" href="scify.html">Scify</a>
+          </div>
+        </div>
+
+        <div class="genre">
+          <div class="card">
+            <div class="card__body">
+              <img class="genre__image" src="images/teatro.png" alt="" />
+            </div>
+            <a class="btn btn--outline btn--block" href="teatro.html">Teatro</a>
+          </div>
+        </div>
+        <div class="genre">
+          <div class="card">
+            <div class="card__body">
+              <img class="genre__image" src="images/fantasy.png" alt="" />
+            </div>
+            <a href="fantasia.html" class="btn btn--outline btn--block"
+              >Fantasía</a
+            >
+          </div>
+        </div>
+        <div class="genre">
+          <div class="card">
+            <div class="card__body">
+              <img class="genre__image" src="images/filosofia.png" alt="" />
+            </div>
+            <a class="btn btn--outline btn--block" href="filosofia.html"
+              >Filosofía</a
+            >
+          </div>
+        </div>
+        <div class="genre">
+          <div class="card">
+            <div class="card__body">
+              <img class="genre__image" src="images/historia.png" alt="" />
+            </div>
+            <a class="btn btn--outline btn--block" href="historia.html"
+              >Historia</a
+            >
+          </div>
+        </div>
+        <div class="genre">
+          <div class="card">
+            <div class="card__body">
+              <img class="genre__image" src="images/novela.png" alt="" />
+            </div>
+            <a class="btn btn--outline btn--block" href="novela.html">Novela</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="block block-footer">
+      <div class="container grid footer__sections">
+        <section class="footer__section">
+          <ul class="list">
+            <li><a href="scify.html">Ciencia Ficción</a></li>
+            <li><a href="teatro.html">Teatro</a></li>
+            <li><a href="fantasia.html">Fantasía</a></li>
+          </ul>
         </section>
-        <section id="novelas">
-            <h2>Novelas</h2>
-            <article>
-                <p>
-                    En esta sección encontrarás mis novelas favoritas, esas que
-                    me han hecho reír, pensar o incluso llorar. Me gusta descubrir
-                    historias que dejan huella, con personajes profundos y tramas
-                    que atrapan desde la primera página. Aquí comparto mis impresiones,
-                    curiosidades sobre los autores y recomendaciones para quienes disfrutan
-                    perderse en una buena historia.
-                </p>
-            </article>
-            <article id="frases">
-                <h3>Novelescas</h3>
-                <blockquote>
-                    <q>El alma se sana estando con los demás, pero sobre todo con aquellos que sufren, 
-                        porque en la compasión y en la comprensión profunda de los otros, uno descubre 
-                        también la fuerza para soportar sus propios tormentos.</q>
-                        <br>
-                    <cite>Crimen y castigo de Fyodor Dostoyevski</cite>
-                </blockquote>
-                <blockquote>
-                    <q>Es una verdad universalmente reconocida que un hombre soltero, 
-                        poseedor de una gran fortuna, debe estar en busca de esposa; 
-                        sin embargo, poco sabemos de sus verdaderos sentimientos y aspiraciones, 
-                        y aún menos de los obstáculos que enfrentará en el camino del corazón.</q>
-                        <br>
-                    <cite>Orgullo y prejuicio de Jane Austen</cite>
-                </blockquote>
-                <blockquote>
-                    <q>No hay nada como quedarse en casa para encontrar el verdadero consuelo; allí, 
-                        en la intimidad de las habitaciones conocidas y los recuerdos cotidianos, 
-                        uno puede reflexionar sobre la vida y sus vicisitudes sin el peso del mundo exterior.</q>
-                        <br>
-                    <cite>Mrs Dalloway de Virginia Woolf</cite>
-                </blockquote>
-                <blockquote>
-                    <q>No hay nada más sorprendente que el destino de un corazón humano; 
-                        muchas veces nuestras esperanzas y deseos nos guían por caminos inesperados, 
-                        y solo cuando miramos atrás comprendemos cómo cada encuentro y cada pérdida nos 
-                        ha ido formando y transformando</q>
-                        <br>
-                    <cite>Grandes esperanzas de Charles Dickens</cite>
-                </blockquote>
-                <blockquote>
-                    <q>Tal vez no somos perfectos, y nuestras pasiones nos llevan por caminos difíciles, 
-                        pero el amor verdadero nos transforma, nos enseña a perdonar y a reconocer 
-                        que la fuerza de los sentimientos puede ser más poderosa que cualquier obstáculo 
-                        que nos separa.</q>
-                        <br>
-                    <cite>Cumbres borrascosas de Emily Brontë</cite>
-                </blockquote>
-                <blockquote>
-                    <q>Emma vivía en un mundo de ilusiones donde los sentimientos parecían siempre más 
-                        grandes y más intensos que la realidad; su corazón ansiaba aventuras y pasiones 
-                        que la vida cotidiana nunca podía ofrecer, y en ese anhelo constante hallaba tanto 
-                        su encanto como su tragedia</q>
-                        <br>
-                    <cite>Madame Bovary de Gustave Flaubert</cite>
-                </blockquote>
-                <blockquote>
-                    <q>A veces, la esperanza es lo único que nos queda; incluso en medio del dolor y 
-                        la injusticia, un gesto de bondad o una palabra de consuelo puede iluminar la vida 
-                        de alguien y recordarnos que la redención y la compasión son posibles, aunque el 
-                        mundo parezca sombrío.</q>
-                        <br>
-                    <cite>Los Miserables de Victor Hugo</cite>
-                </blockquote>
-            </article>
+        <section class="footer__section">
+          <ul class="list">
+            <li><a href="filosofia.html">Filosofía</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="novela.html">Novela</a></li>
+          </ul>
         </section>
-        <section id="historia">
-            <h2>Historia</h2>
-            <article>
-                <p>
-                    La historia siempre me ha fascinado, especialmente los acontecimientos
-                    que marcaron el rumbo del mundo. En esta sección comparto mis lecturas
-                    y reflexiones sobre distintas épocas, aunque confieso que la Segunda Guerra
-                    Mundial me llama especialmente la atención. Me interesa comprender no solo
-                    los hechos, sino también las historias humanas detrás de ellos: las decisiones,
-                    los sacrificios y las consecuencias que aún resuenan en nuestro presente.
-                </p>
-            </article>
-            <article>
-                <h3>Históricos</h3>
-                <dl>
-                    <dt>El hombre en busca de sentido de Viktor Frankl</dt>
-                        <dd>Relato autobiográfico del psiquiatra austriaco sobre su experiencia en campos de concentración, donde desarrolla su teoría de la logoterapia y la búsqueda de sentido en la vida.</dd>
-                    <dt>La bailarina de Auschwitz de Edith Eger</dt>  
-                        <dd>Historia real de supervivencia, resiliencia y esperanza de Edith Eger, quien sufrió el Holocausto y encontró fuerza en la danza para superar traumas inimaginables.</dd> 
-                    <dt>Eichmann en Jerusalén de Hannah Arendt</dt>
-                        <dd>Análisis del juicio de Adolf Eichmann, uno de los principales responsables del Holocausto, y reflexión sobre la “banalidad del mal” y la responsabilidad individual en crímenes de masa.</dd>
-                    <dt>El diario de Ana Frank de Ana Frank</dt>
-                        <dd>Testimonio íntimo de una niña judía escondida durante la ocupación nazi en Ámsterdam, que relata su vida, miedos y sueños mientras el mundo exterior vivía la guerra.</dd>
-                    <dt>La Segunda Guerra Mundial de Winston Churchill</dt>
-                        <dd>Obra histórica escrita por el propio Churchill, basada en su experiencia y visión como líder británico durante la guerra, ofreciendo análisis político y militar del conflicto.</dd>
-            
-                </dl>
-            </article>
+        <section class="footer__section">
+          <ul class="list">
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="home.html">Home</a></li>
+          </ul>
         </section>
-        <section id="fantasia">
-            <h2>Fantasía</h2>
-            <article>
-                <p>
-                    La fantasía es uno de mis géneros favoritos porque permite imaginar
-                    mundos sin límites. En esta sección hablo de sagas, novelas y autores
-                    que me han hecho soñar con reinos mágicos, criaturas imposibles y héroes
-                    inolvidables. Me encanta cómo este género combina aventura, emoción y
-                    mensajes profundos sobre el bien, el mal y la esperanza. Si te
-                    apasionan los mundos donde todo es posible, aquí encontrarás
-                    muchas historias que merecen ser leídas.
-                </p>
-            </article>
-            
-            <article>
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="4" style="text-align: center;">Fantásticos</th>
-                        </tr>
-                        <tr>
-                            <th>Título</th>
-                            <th>Autor</th>
-                            <th>Año</th>
-                            <th>Mundo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Harry Potter y la piedra filosofal</td>
-                            <td>J.K: Rowling</td>
-                            <td>1997</td>
-                            <td>Mundo mágico</td>
-                        </tr>
-                        <tr>
-                            <td>Canción de Hielo y Fuego: Juego de Tronos</td>
-                            <td>George R.R. Martin</td>
-                            <td>1996</td>
-                            <td>Poniente</td>
-                        </tr>
-                        <tr>
-                            <td>El Nombre del Viento</td>
-                            <td>Patrick Rothfuss</td>
-                            <td>2007</td>
-                            <td>Temerant</td>
-                        </tr>
-                        <tr>
-                            <td>Crónica del Asesino de Reyes</td>
-                            <td>Patrick Rothfuss</td>
-                            <td>2007</td>
-                            <td>Temerant</td>
-                        </tr>
-                        <tr>
-                            <td>El Hobbit</td>
-                            <td>J.R.R. Tolkien</td>
-                            <td>1937</td>
-                            <td>Tierra Media</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+        <section class="footer__section footer__brand">
+          <a href="home.html">
+            <h1 class="logo">Bibliofiles</h1>
+          </a>
+          <p>Copyright 2025 Kevin Soliz</p>
         </section>
-        <section id="cienciaFiccion">
-            <h2>Ciencia Ficción</h2>
-            <article>
-                <p>
-                    La ciencia ficción siempre me ha intrigado por su capacidad de
-                    mezclar imaginación y reflexión. En esta sección comparto libros
-                    que exploran futuros posibles, avances tecnológicos y dilemas humanos
-                    en contextos donde la ciencia lo cambia todo. Me gusta cómo este género
-                    nos hace cuestionar hasta dónde puede llegar la humanidad y qué significa
-                    realmente ser humano. Si te atraen las historias que combinan ideas futuristas
-                    con emociones reales, este es tu espacio.
-                </p>
-            </article>
-            <!-- <article>
-                <table id="tablaCienciaFiccion">
-                    <tr>
-                        <td colspan="2" rowspan="2"><img src="images/astronauta.jpg" ></td>
-                        <td>B</td>
-                        <td rowspan="2"><img src="images/marte.jpg" ></td>
-                        
-                    </tr>
-                    <tr>
-                    
-                        <td>B</td>
-                        
-                    
-                    </tr>
-                    <tr>
-                        <td colspan="2"><img src="images/robot.jpg" ></td>
-                        
-                        <td rowspan="2"><img src="images/vialactea.jpg" ></td>
-                        <td>D</td>
-                    </tr>
-                    <tr>
-                        <td>A</td>
-                        <td>B</td>
-                        
-                        <td>D</td>
-                    </tr>
-                </table>
-            </article> -->
-        </section>
-        <section id="filosofia">
-            <h2>Filosofía</h2>
-            <article>
-                <p>
-                    La filosofía me atrae porque invita a pensar más allá de lo evidente.
-                    En esta sección comparto libros e ideas que me han hecho cuestionar la realidad,
-                    la moral y la forma en que entendemos la vida. Me interesa cómo los filósofos,
-                    desde la antigüedad hasta la actualidad, han intentado responder a las grandes
-                    preguntas que todos nos hacemos. Aquí encontrarás reflexiones, autores y pensamientos
-                    que invitan a detenerse y mirar el mundo con otra perspectiva.
-                </p>
-            </article>
-            <article>
-                <h3>Filosóficos</h3>
-                <ol>
-                    <li><em>El mundo de Sofía</em> de Jostein Gaarder</li>
-                    <li><em>La República</em> de Platón</li>
-                    <li><em>Meditaciones</em> de Marco Aurelio</li>
-                    <li><em>Ética a Nicómaco</em> de Aristóteles</li>
-                    <li><em>Más allá del bien y del mal</em> de Friedrich Nietzsche</li>
-                    <li><strong><em>Crítica de la razón pura</em></strong> de Immanuel Kant</li>
-                    <li><em>El contrato social</em> de Jean-Jacques Rousseau</li>
-                    <li><em>Discurso del método </em>de René Descartes</li>
-                    <li><em>Leviatán</em> de Thomas Hobbes</li>
-                    <li><em>Ser y tiempo</em> de Martin Heidegger</li>
-                </ol>
-            </article>
-        </section>
-        <section id="teatro">
-            <h2>Teatro</h2>
-            <article>
-                <p>
-                    El teatro siempre me ha parecido una forma única de arte, donde las palabras
-                    cobran vida frente al público. En esta sección comparto mis lecturas y opiniones
-                    sobre obras teatrales que me han marcado, desde los clásicos de siempre hasta
-                    autores más modernos. Me gusta cómo el teatro logra expresar emociones intensas
-                    y retratar la condición humana con tanta cercanía y fuerza. Cada obra es un reflejo
-                    de la sociedad y, al mismo tiempo, un espejo de nosotros mismos.
-                </p>
-            </article>
-        </section>
-        
-        <section id="contactame"> <!--Formulario de-->
-            <h2>Contáctame</h2>
-            <form action="">
-                <label for="nombreApellido">Nombre y apellido</label>
-                <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Charles Dickens" required>
-                <label for="edad">Edad</label>
-                <input type="number" id="edad" name="edad" max="3" placeholder="100 años de soledad" required>
-                <label for="correo">Email</label>
-                <input type="email" id="correo" name="correo" placeholder="porsiquieresqueterecomiendealgo@gmail.com">
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="20" rows="10">Pues tu blog no me gusta porque dices que Shakespeare es el padre del teatro, pero olvidas a Calderón que ya estaba escribiendo obras maestras mientras los ingleses aún estaban decidiendo si poner o no telón.</textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-       
-     
+      </div>
     </footer>
-</body>
+  </body>
+  <script src="script/main.js"></script>
 </html>
