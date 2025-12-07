@@ -7,3 +7,20 @@
 .order-list{
   padding-left: 2rem;
 }
+
+dt {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+}
+dd {
+  background: rgb(221, 250, 232);
+  color: var(--color-headings);
+  font-weight: bold;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
