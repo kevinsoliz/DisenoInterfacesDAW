@@ -1,0 +1,29 @@
+/* Media Object */
+.media {
+  display: flex;
+  margin-bottom: 4rem;
+  background: var(--color-accent);
+  padding: 3rem 5rem;
+  border-radius: 30px;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+  p {
+    color: var(--color-headings)
+  }
+}
+
+.media__image {
+  margin-top: 0.3rem;
+
+  img {
+    width: 100px;
+    border-radius: 100px;
+  }
+}
+

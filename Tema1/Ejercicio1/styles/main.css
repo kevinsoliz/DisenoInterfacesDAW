@@ -521,4 +521,31 @@ table tr:hover, tr tr:hover, th tr:hover, td tr:hover {
   .input-group .btn {
     font-size: 2rem;
   }
+}
+/* Media Object */
+.media {
+  display: flex;
+  margin-bottom: 4rem;
+  background: var(--color-accent);
+  padding: 3rem 5rem;
+  border-radius: 30px;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+.media__body p {
+  color: var(--color-headings);
+}
+
+.media__image {
+  margin-top: 0.3rem;
+}
+.media__image img {
+  width: 100px;
+  border-radius: 100px;
 }/*# sourceMappingURL=main.css.map */
