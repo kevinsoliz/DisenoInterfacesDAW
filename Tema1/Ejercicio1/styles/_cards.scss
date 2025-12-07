@@ -8,6 +8,7 @@
     padding: 1rem;
 }
 
-.card--accent {
-    background: var(--color-accent);
+
+.card--accent:hover {
+    background: rgb(140, 251, 210);
 }

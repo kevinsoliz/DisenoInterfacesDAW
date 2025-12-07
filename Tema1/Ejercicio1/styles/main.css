@@ -89,8 +89,8 @@ p {
   padding: 1rem;
 }
 
-.card--accent {
-  background: var(--color-accent);
+.card--accent:hover {
+  background: rgb(140, 251, 210);
 }
 
 /* Links */
@@ -223,9 +223,18 @@ a {
           mask-image: linear-gradient(to top, transparent 0%, black 70%);
 }
 
-/* Genres Block */
 .block-genres {
-  margin-top: 10rem;
+  background: var(--color-accent);
+  padding: 4rem;
+  border-radius: 30px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.block-genres .block__header {
+  margin-bottom: 3rem;
+}
+.block-genres p {
+  color: var(--color-headings);
 }
 
 .block-genres .grid {
@@ -466,7 +475,7 @@ table tr:hover, tr tr:hover, th tr:hover, td tr:hover {
 }
 
 .block-buscador {
-  margin-top: 15rem;
+  margin-top: 5rem;
 }
 
 .input {
@@ -479,10 +488,9 @@ table tr:hover, tr tr:hover, th tr:hover, td tr:hover {
 }
 
 .input-group {
-  border: 5px solid var(--color-accent);
   border-radius: 50px;
   display: flex;
-  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
 }
 
@@ -514,7 +522,7 @@ table tr:hover, tr tr:hover, th tr:hover, td tr:hover {
 
 @media screen and (min-width: 768px) {
   .block-buscador {
-    margin-top: 0;
+    margin-top: 10rem;
   }
 }
 @media screen and (min-width: 1024px) {

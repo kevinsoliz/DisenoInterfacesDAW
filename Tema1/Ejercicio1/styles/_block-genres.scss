@@ -4,9 +4,20 @@
     mask-image: linear-gradient(to top, transparent 0%, black 70%);
 }
 
-/* Genres Block */
 .block-genres {
-  margin-top: 10rem;
+  background: var(--color-accent);
+  padding: 4rem;
+  border-radius: 30px;
+
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  .block__header {
+    margin-bottom: 3rem;
+  }
+  p {
+    color: var(--color-headings);
+  }
 }
 .block-genres .grid {
   gap: 8rem 4rem;
