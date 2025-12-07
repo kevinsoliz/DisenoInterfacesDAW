@@ -254,6 +254,10 @@ a {
   padding-left: 0;
 }
 
+.order-list {
+  padding-left: 2rem;
+}
+
 /* Icons */
 .icon {
   width: 30px;
