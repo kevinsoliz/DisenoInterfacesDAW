@@ -1,0 +1,89 @@
+/* Variables */
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+$font-family: Arial;
+$base-font-size: 16px;
+
+/* 3. Estilos */
+body {
+  background-color: #f2f2f2;
+  font-family: $font-family;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: $primary-color;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  display: inline-block;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .important-text {
+    font-weight: bold;
+    color: $secondary-color;
+  }
+}
+
+/* 4. Mapa */
+$button-styles: (
+  primary-button: $primary-color,
+  secondary-button: #2ecc71,
+  buy-button: #f39c12
+);
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background 0.3s;
+
+ 
+  @each $btn-class, $btn-color in $button-styles {
+    &.#{$btn-class} {
+      background: $btn-color;
+
+      &:hover {
+        background: darken($btn-color, 10%);
+      }
+    }
+  }
+}
+
+
+/* 5. Mixin */
+
+@mixin center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered {
+  @include center-element;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

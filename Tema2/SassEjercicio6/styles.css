@@ -1,0 +1,76 @@
+/* Variables */
+/* 3. Estilos */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #3498db;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  display: inline-block;
+}
+.product:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+.product h3 {
+  font-size: 1.5rem;
+}
+.product .important-text {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* 4. Mapa */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background 0.3s;
+}
+button.primary-button {
+  background: #3498db;
+}
+button.primary-button:hover {
+  background: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+button.secondary-button {
+  background: #2ecc71;
+}
+button.secondary-button:hover {
+  background: rgb(36.616, 162.384, 89.948);
+}
+button.buy-button {
+  background: #f39c12;
+}
+button.buy-button:hover {
+  background: rgb(199.8795180723, 126.5060240964, 10.1204819277);
+}
+
+/* 5. Mixin */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=styles.css.map */
