@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px;
+  background: rgb(15.306122449, 6.1224489796, 38.8775510204);
+}
+.hero .titulo {
+  font-size: 3rem;
+  color: rgb(217.387755102, 205.7551020408, 247.2448979592);
+}
+.hero .subtitulo {
+  color: rgb(116, 70, 224);
+}
+
+.card {
+  margin: 2rem auto;
+  width: 80%;
+  padding: 20px;
+  border: 2px solid rgb(116, 70, 224);
+  border-radius: 15px;
+  text-align: center;
+  color: rgba(116, 70, 224, 0.8);
+}
+.card h2 {
+  color: rgb(116, 70, 224);
+}
+
+.block-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn, .btn--accent4, .btn--accent3, .btn--accent2, .btn--accent {
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.btn--accent {
+  background: rgb(116, 70, 224);
+  border-radius: 50px;
+  padding: 12px 25px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn--accent:hover {
+  box-shadow: 0 0 20px rgba(116, 70, 224, 0.3);
+  transform: scale(1.05);
+  background: rgb(68.4444444444, 27.5555555556, 164.4444444444);
+}
+
+.btn--accent2 {
+  background: rgb(59, 215, 239);
+  border-radius: 50px;
+  padding: 12px 25px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn--accent2:hover {
+  box-shadow: 0 0 20px rgba(59, 215, 239, 0.3);
+  transform: scale(1.05);
+  background: rgb(14.7924528302, 159.0188679245, 181.2075471698);
+}
+
+.btn--accent3 {
+  background: dodgerblue;
+  border-radius: 50px;
+  padding: 12px 25px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn--accent3:hover {
+  box-shadow: 0 0 20px rgba(30, 144, 255, 0.3);
+  transform: scale(1.05);
+  background: rgb(0, 92.72, 183);
+}
+
+.btn--accent4 {
+  background: rgb(237, 63, 130);
+  border-radius: 50px;
+  padding: 12px 25px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn--accent4:hover {
+  box-shadow: 0 0 20px rgba(237, 63, 130, 0.3);
+  transform: scale(1.05);
+  background: rgb(181.0285714286, 16.9714285714, 80.1428571429);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+@use 'variables' as *; 
+@use 'mixins' as *;
+
+.block-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+
+.btn--accent {
+  @extend .btn;
+  @include btn($color-primary);
+}
+.btn--accent2 {
+  @extend .btn;
+  @include btn(rgb(59, 215, 239));
+}
+.btn--accent3 {
+  @extend .btn;
+  @include btn(dodgerblue);
+}
+.btn--accent4 {
+  @extend .btn;
+  @include btn(rgb(237, 63, 130));
+}
+

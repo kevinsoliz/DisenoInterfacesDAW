@@ -1,0 +1,35 @@
+@use 'variables' as *; 
+
+body {
+    margin: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: $padding-global * 3;
+  background: darken($color-accent, 20%);
+ 
+  .titulo {
+    font-size: 3rem;
+    color: lighten($color-accent, 60%);
+  }
+
+  .subtitulo {
+    color: $color-primary;
+   
+  }
+}
+
+.card {
+  margin: 2rem auto;
+  width: 80%;
+  padding: $padding-global * 2;
+  border: 2px solid $color-primary;
+  border-radius: 15px;
+  text-align: center;
+  color: opacidad($color-primary, 0.8);
+
+  h2 {
+    color: $color-primary;
+  }
+}

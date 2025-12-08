@@ -1,0 +1,10 @@
+
+$color-primary: rgb(116, 70, 224);
+$color-accent: rgb(50, 20, 127);
+$color-body: rgb(69, 10, 52);
+
+$padding-global: 10px;
+
+@function opacidad($color, $valor) {
+  @return rgba($color, $valor);
+}
