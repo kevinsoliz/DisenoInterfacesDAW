@@ -60,15 +60,15 @@ button {
   border: none;
   border-radius: 5px;
   margin: 10px;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
 
  
   @each $btn-class, $btn-color in $button-styles {
     &.#{$btn-class} {
-      background: $btn-color;
+      background-color: $btn-color;
 
       &:hover {
-        background: darken($btn-color, 10%);
+        background-color: darken($btn-color, 10%);
       }
     }
   }
