@@ -22,7 +22,6 @@ p {
   border-radius: 5px;
   margin: 10px;
   padding: 15px;
-  display: inline-block;
 }
 .product:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -45,25 +44,25 @@ button {
   border: none;
   border-radius: 5px;
   margin: 10px;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
 }
 button.primary-button {
-  background: #3498db;
+  background-color: #3498db;
 }
 button.primary-button:hover {
-  background: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
 }
 button.secondary-button {
-  background: #2ecc71;
+  background-color: #2ecc71;
 }
 button.secondary-button:hover {
-  background: rgb(36.616, 162.384, 89.948);
+  background-color: rgb(36.616, 162.384, 89.948);
 }
 button.buy-button {
-  background: #f39c12;
+  background-color: #f39c12;
 }
 button.buy-button:hover {
-  background: rgb(199.8795180723, 126.5060240964, 10.1204819277);
+  background-color: rgb(199.8795180723, 126.5060240964, 10.1204819277);
 }
 
 /* 5. Mixin */
