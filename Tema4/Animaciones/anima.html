@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Animación de Rotación</title>
+
+<style>
+  .caja {
+    width: 100px;
+    height: 100px;
+    background: dodgerblue;
+    margin: 40px auto;
+    border-radius: 8px;
+    animation: girar 2s linear infinite;
+  }
+
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</head>
+
+<body>
+  <div class="caja"></div>
+</body>
+</html>
